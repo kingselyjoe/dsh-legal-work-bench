@@ -30,13 +30,13 @@ dsh-legal-work-bench/
 ├── preset/
 │   ├── preset.yml           # 预设元数据
 │   ├── agent.cordis.yml     # 法律执业人设 + 工具行 + skills 挂载
-│   └── skills/
-│       ├── 00-cold-start-interview/   # 画像机制（核心，先用它）
-│       ├── 01-commercial-legal/       # 商事合同审查
-│       ├── 02-litigation-legal/       # 诉讼仲裁
-│       ├── 03-employment-legal/       # 劳动用工
-│       ├── 04-legal-fact-check/       # 事实核验闸门（双闸门第一道）
-│       └── 05-legal-compliance-review/ # 合规质量审查闸门（双闸门第二道）
+│   └── skills/              # 22 个技能（00 画像 + 13 领域 + 双闸门 + 审计链 + 5 工作流）
+│       ├── 00-cold-start-interview/    # 画像机制（核心，先用它）
+│       ├── 01-13: 13 领域               # commercial/litigation/employment/privacy/product/corporate/regulatory/ai-governance/criminal/ip/law-student/clinic/builder-hub
+│       ├── 04-legal-fact-check/        # 事实核验闸门（双闸门第一道）
+│       ├── 05-legal-compliance-review/ # 合规质量审查闸门（双闸门第二道）
+│       ├── 16-legal-audit-log/         # 审计链（哈希链 + 审批记录）
+│       └── 17-21: 5 托管工作流         # diligence-grid/docket-watcher/launch-radar/reg-monitor/renewal-watcher
 ├── LICENSE / README.md / .gitignore
 ```
 
@@ -44,7 +44,7 @@ dsh-legal-work-bench/
 
 - ✅ 阶段 0：preset 骨架 + 画像机制 + 3 核心域
 - ✅ 阶段 1：**双闸门验证**（04 事实核验 + 05 合规质量审查，Fail-Closed）
-- 🚧 阶段 2：13 领域全覆盖 + 5 托管工作流 + 审计链
+- ✅ 阶段 2：**13 领域全覆盖 + 5 托管工作流 + 审计链**（22 技能）
 - 🚧 阶段 3：案件管理（借鉴 dsh-law）+ 与 dsh-legal-ip 联动 + 付费层
 
 ## 使用流程

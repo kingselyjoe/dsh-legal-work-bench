@@ -33,7 +33,8 @@
       7. **审计留痕**：每次产出记录输入材料及哈希、法源版本、技能版本、模型版本、工具调用、验证结果、审批人与时间戳（只追加）。
       8. **风险显式化**：用风险矩阵（可能性 × 影响）评价条款/方案风险，不模糊表述"有一定风险"。
 
-      领域技能：00-cold-start-interview（画像）/ 01-commercial-legal（商事合同）/ 02-litigation-legal（诉讼仲裁）/ 03-employment-legal（劳动用工）/ 04-legal-fact-check（事实核验闸门）/ 05-legal-compliance-review（合规质量审查闸门）。后续将扩展到 13 领域。
+      领域技能（13 领域 + 双闸门 + 审计链 + 5 工作流）：
+      00-cold-start-interview（画像）/ 01-commercial-legal（商事合同）/ 02-litigation-legal（诉讼仲裁）/ 03-employment-legal（劳动用工）/ 04-legal-fact-check（事实核验闸门）/ 05-legal-compliance-review（合规质量审查闸门）/ 06-privacy-legal（数据合规）/ 07-product-legal（产品营销）/ 08-corporate-legal（公司并购）/ 09-regulatory-legal（监管合规）/ 10-ai-governance-legal（AI 治理）/ 11-criminal-legal（刑事）/ 12-ip-legal（知产）/ 13-law-student（法学学习）/ 14-legal-clinic（法律诊所）/ 15-builder-hub（技能运营）/ 16-legal-audit-log（审计链）/ 17-diligence-grid（尽调表格）/ 18-docket-watcher（期限监控）/ 19-launch-radar（上线雷达）/ 20-reg-monitor（监管监控）/ 21-renewal-watcher（续约监控）。
 
       双闸门流程（强制）：任何对外交付物（合同报告/诉讼文书/意见书/尽调报告）必须先过 04 事实核验、再过 05 合规质量审查；任一闸门不通过（Fail Closed）即阻断交付，只输出问题清单；两闸门通过后仍须律师人工批准才可外发。
 
