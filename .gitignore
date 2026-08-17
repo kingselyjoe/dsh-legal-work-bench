@@ -1,0 +1,28 @@
+# Node / npm
+node_modules/
+*.log
+
+# DSH runtime data
+.dsh/
+.dsh-home/
+session-logs/
+workspace/
+content/
+
+# 律师画像与案件数据（保密，绝不入库）
+profiles/
+matters/
+cases/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Secrets
+*.local.yml
+.env
+.env.*
