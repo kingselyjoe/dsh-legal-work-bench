@@ -34,16 +34,18 @@ dsh-legal-work-bench/
 │       ├── 00-cold-start-interview/   # 画像机制（核心，先用它）
 │       ├── 01-commercial-legal/       # 商事合同审查
 │       ├── 02-litigation-legal/       # 诉讼仲裁
-│       └── 03-employment-legal/       # 劳动用工
+│       ├── 03-employment-legal/       # 劳动用工
+│       ├── 04-legal-fact-check/       # 事实核验闸门（双闸门第一道）
+│       └── 05-legal-compliance-review/ # 合规质量审查闸门（双闸门第二道）
 ├── LICENSE / README.md / .gitignore
 ```
 
 ## 阶段状态
 
 - ✅ 阶段 0：preset 骨架 + 画像机制 + 3 核心域
-- 🚧 阶段 1：双闸门验证（事实核验 + 合规审查）
+- ✅ 阶段 1：**双闸门验证**（04 事实核验 + 05 合规质量审查，Fail-Closed）
 - 🚧 阶段 2：13 领域全覆盖 + 5 托管工作流 + 审计链
-- 🚧 阶段 3：Matter 管理 + 与 dsh-legal-ip 联动 + 付费层
+- 🚧 阶段 3：案件管理（借鉴 dsh-law）+ 与 dsh-legal-ip 联动 + 付费层
 
 ## 使用流程
 
