@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>dsh-legal-work-bench · 律师办公工作台</title>
+<style>
+  :root { --accent:#16a34a; --dark:#1a1d29; --bg:#f7f8fb; --card:#fff; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--dark); line-height:1.7; }
+  .hero { background:linear-gradient(135deg,#16a34a 0%,#0d9488 100%); color:#fff; padding:64px 24px 56px; text-align:center; }
+  .hero h1 { font-size:2.2em; margin-bottom:12px; }
+  .hero p { font-size:1.1em; opacity:.92; max-width:760px; margin:0 auto; }
+  .hero .tag { display:inline-block; background:rgba(255,255,255,.18); border-radius:20px; padding:4px 16px; font-size:.85em; margin-top:16px; }
+  .wrap { max-width:960px; margin:0 auto; padding:32px 20px 64px; }
+  .card { background:var(--card); border-radius:12px; padding:24px; margin:16px 0; box-shadow:0 2px 12px rgba(0,0,0,.06); }
+  .card h2 { font-size:1.3em; margin-bottom:12px; color:var(--accent); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; margin-top:12px; }
+  .skill { background:var(--bg); border-radius:8px; padding:12px 16px; font-size:.92em; }
+  .skill b { display:block; color:var(--dark); margin-bottom:2px; }
+  .skill span { color:#666; font-size:.85em; }
+  pre { background:#1a1d29; color:#e8eaf2; padding:16px; border-radius:8px; overflow-x:auto; font-size:.9em; margin-top:12px; }
+  code { font-family:"SF Mono",Consolas,monospace; }
+  .btn { display:inline-block; background:var(--accent); color:#fff; text-decoration:none; padding:10px 24px; border-radius:8px; margin:8px 8px 0 0; font-weight:600; }
+  .btn.gh { background:#24292f; }
+  .btn.ip { background:#4D6BFE; }
+  .footer { text-align:center; color:#888; font-size:.85em; padding:32px 20px; }
+  .sibling { text-align:center; padding:24px; background:linear-gradient(135deg,#4D6BFE,#7a5cff); color:#fff; border-radius:12px; margin-top:24px; }
+  .sibling a { color:#fff; font-weight:700; }
+  .pipeline { background:#eef5ee; border-left:4px solid var(--accent); padding:12px 16px; border-radius:6px; font-size:.92em; margin-top:12px; }
+</style>
+</head>
+<body>
+<div class="hero">
+  <h1>⚖️ dsh-legal-work-bench</h1>
+  <p>DSH 原生律师办公工作台 —— 合同审查 / 诉讼仲裁 / 劳动用工 / 13 大法律领域</p>
+  <p style="font-size:.95em;margin-top:8px;opacity:.85">画像机制 · 双闸门验证 · 审计链 · 案件管理 · 门禁审批 · 内容联动</p>
+  <span class="tag">25 skills · preset · MIT 开源</span>
+</div>
+
+<div class="wrap">
+  <div class="card">
+    <h2>一句话定位</h2>
+    <p>先溯源再下结论，绝不编造，双闸门验证，对外动作必须人工批准。<b>它不是技能插件集，而是把 DSH 变成完整律师工作台的 preset + 25 技能。</b></p>
+  </div>
+
+  <div class="card">
+    <h2>能力全景</h2>
+    <div class="pipeline">00 画像 → 13 领域 → 04+05 双闸门 → 16 审计链 → 5 工作流 → 22 案件管理 → 23 门禁审批 → 24 内容联动</div>
+    <div class="grid">
+      <div class="skill"><b>00 画像机制</b><span>冷启动访谈，种子文件反推立场</span></div>
+      <div class="skill"><b>13 大领域</b><span>商事/诉讼/劳动/数据/产品/公司/监管/AI 治理/刑事/知产/法考/诊所/运营</span></div>
+      <div class="skill"><b>双闸门</b><span>事实核验 + 合规质量审查（Fail-Closed）</span></div>
+      <div class="skill"><b>审计链</b><span>哈希链 + 审批记录 + 版本绑定</span></div>
+      <div class="skill"><b>5 托管工作流</b><span>尽调/期限/上线/监管/续约监控</span></div>
+      <div class="skill"><b>案件管理</b><span>八级目录 + 六列状态机 + 只追加事件</span></div>
+      <div class="skill"><b>门禁审批</b><span>AI 申请 → 律师审批，AI 不能自批</span></div>
+      <div class="skill"><b>内容联动</b><span>案件产出 → 脱敏素材 → legal-ip</span></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>安装（60 秒）</h2>
+<pre><code>cp -R preset ~/.dsh/.agent-presets/dsh-legal-work-bench
+# 新建会话 → 预设选择器 → 选「律师工作台（Legal Work Bench）」</code></pre>
+    <p style="font-size:.9em;color:#666;margin-top:8px">⚠️ 第一件事：运行 <code>cold-start-interview</code> 完成实践画像（2 分钟快速模式），或提供 5-10 份已签合同反推你的条款立场。</p>
+  </div>
+
+  <div class="card">
+    <h2>快速上手</h2>
+<pre><code>"帮我审查这份供应商合同，重点看责任限制和赔偿条款"（自动过双闸门）
+"把这个案子建成 Matter，提醒我所有期限"
+"开一个尽调项目，生成问题清单"</code></pre>
+  </div>
+
+  <div class="sibling">
+    🔗 配套套件：<a href="https://github.com/kingselyjoe/dsh-legal-ip">dsh-legal-ip</a>（律师自媒体内容生产套件）
+    <br><span style="opacity:.85">办案用 work-bench，发内容用 legal-ip —— 两包一核矩阵</span>
+  </div>
+
+  <div style="text-align:center;margin-top:20px">
+    <a class="btn gh" href="https://github.com/kingselyjoe/dsh-legal-work-bench">GitHub 仓库</a>
+    <a class="btn ip" href="https://github.com/kingselyjoe/dsh-legal-ip">legal-ip</a>
+  </div>
+</div>
+
+<div class="footer">
+  本工作台产出为律师审查辅助，不替代律师判断，不构成正式法律意见。案件数据本机处理。<br>
+  MIT License © dsh-legal-work-bench contributors（方法论参考 claude-for-legal-ZH，Apache 2.0）
+</div>
+</body>
+</html>

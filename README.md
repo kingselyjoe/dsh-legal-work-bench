@@ -1,6 +1,9 @@
 # dsh-legal-work-bench
 
-> DSH 原生律师办公工作台 —— 办案用 work-bench，发内容用 legal-ip（[dsh-legal-ip](https://github.com/kingselyjoe/dsh-legal-ip)）
+> DSH 原生律师办公工作台 —— 办案用 work-bench，发内容用 legal-ip
+
+> 🔗 **配套套件**：[dsh-legal-ip](https://github.com/kingselyjoe/dsh-legal-ip)（律师自媒体内容生产套件）
+> ｜ 矩阵定位：**办案用 work-bench，发内容用 legal-ip**（content-bridge 双向联动）｜ 项目主页：[GitHub Pages](https://kingselyjoe.github.io/dsh-legal-work-bench/)
 
 基于 DeepSeek Harness（DSH）的律师办公工作台：preset + 技能 + 工作流，覆盖合同审查、诉讼仲裁、劳动用工等领域，内置**双闸门验证**（事实核验 + 合规审查）与**审计链**。
 
